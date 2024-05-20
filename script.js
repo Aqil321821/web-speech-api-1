@@ -37,6 +37,14 @@ rec.onresult = function (e) {
       alert('Please say a color');
     }
   }
+  if (document.body.style.backgroundColor==='black') {
+
+    document.querySelector('h1').style.color='white';
+    document.querySelector('h2').style.color='white';
+}else{
+  document.querySelector('h1').style.color='black';
+  document.querySelector('h2').style.color='black';
+}
 };
 
 rec.start();
